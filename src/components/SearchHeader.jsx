@@ -17,7 +17,10 @@ export default function SearchHeader() {
             height={40}
             priority
             style={{ width: 'auto' }}
+            className='sm:flex hidden'
           />
+          <Image src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width={50} height={50}
+          className='sm:hidden'/>
         </Link>
         <div className='flex-1'>
           <SearchBox />
@@ -26,7 +29,7 @@ export default function SearchHeader() {
           <RiSettings3Line className='bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer' />
           <TbGridDots className='bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer' />
         </div>
-        <button className='bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow ml-2'>
+        <button className='bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow ml-2 sm:flex hidden'>
           Sign in
         </button>
       </div>
